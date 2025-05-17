@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mi web</title>
+</head>
+<body>
+    <h1>Formulario de registro</h1>
+    <form action="" method="get">
+
+        <fieldset>
+            <legend><strong>Datos personales</strong></legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required><br><br>
+
+            <p>Sexo:</p>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" name="sexo" value="masculino">
+
+            <label for="femenino">Femenino</label>
+            <input type="radio" id="femenino" name="sexo" value="femenino"><br><br>
+
+                        <label for="estado_civil">Estado civil:</label>
+            <select name="estado_civil" id="estado_civil" required>
+                <option value="soltero" selected>Soltero</option>
+                <option value="casado">Casado</option>
+                <option value="divorciado">Divorciado</option>
+                <option value="separado">Separado</option>
+                <option value="conviviente">Conviviente</option>
+                <option value="viudo">Viudo</option>
+                <option value="argentino">Argentino 🚬</option>
+            </select><br><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Cuenta</strong></legend>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <label for="password">Repita su Contraseña</label>
+            <input type="password" id="confirmar_password" name="confirmar_password" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Ubicación</strong></legend>
+            <label for="pais">País:</label>
+            <select name="pais" id="pais" required>
+                <option value="argentina" selected>Argentina</option>
+                <option value="brasil">Brasil</option>
+                <option value="chile">Chile</option>
+                <option value="uruguay">Uruguay</option>
+                <option value="paraguay">Paraguay</option>
+                <option value="bolivia">Bolivia</option>
+                <option value="peru">Perú</option>
+                <option value="ecuador">Ecuador</option>
+                <option value="colombia">Colombia</option>
+                <option value="venezuela">Venezuela</option>
+            </select><br><br>
+
+            <fieldset>
+                <legend><strong>Dirección</strong></legend>
+                <label for="provincia">Provincia:</label>
+                <input type="text" id="provincia" name="provincia"><br>
+
+                <label for="localidad">Localidad:</label>
+                <input type="text" id="localidad" name="localidad"><br>
+
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion"><br>
+
+                <label for="numero">Número:</label>
+                <input type="text" id="numero" name="numero"><br>
+
+                <label for="departamento">Departamento:</label>
+                <input type="text" id="departamento" name="departamento"><br>
+            </fieldset>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Confirmaciones</strong></legend>
+            <label for="novedades">
+                <input type="checkbox" id="novedades" name="novedades" checked>
+                Deseo recibir información y novedades.
+            </label><br><br>
+
+            <label for="aceptar">
+                <input type="checkbox" id="aceptar" name="acepto_condiciones" required>
+                Declaro haber leído y aceptar las <a href="tyc.html">condiciones generales del programa y la normativa sobre protección de datos</a>.
+            </label><br><br>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

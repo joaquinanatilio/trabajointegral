@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Curriculum Vitae</title>
+</head>
+<body>
+    <h1>Curriculum Vitae</h1>
+    <form action="/guardar_cv" method="post">
+
+        <fieldset>
+            <legend><strong>Datos Personales</strong></legend>
+            <label>Nombre completo:
+                <input type="text" name="nombre_completo" required>
+            </label><br><br>
+            <label>Correo electrónico:
+                <input type="email" name="correo" required>
+            </label><br><br>
+            <label>Fecha de nacimiento:
+                <input type="date" name="nacimiento">
+            </label><br><br>
+            <label>Nacionalidad:
+                <input type="text" name="nacionalidad">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Información Académica</strong></legend>
+            <label>Máximo nivel alcanzado:
+                <select name="nivel_academico">
+                    <option value="secundario">Secundario</option>
+                    <option value="terciario">Terciario</option>
+                    <option value="universitario">Universitario</option>
+                    <option value="posgrado">Posgrado</option>
+                </select>
+            </label><br><br>
+            <label>Institución educativa:
+                <input type="text" name="institucion_academica">
+            </label><br><br>
+            <label>Descripción:
+                <textarea name="detalle_academico" rows="3"></textarea>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Experiencia Laboral</strong></legend>
+            <label>Nombre de la empresa:
+                <input type="text" name="empresa">
+            </label><br><br>
+            <label>Cargo desempeñado:
+                <input type="text" name="cargo">
+            </label><br><br>
+            <label>Resumen de tareas:
+                <textarea name="tareas" rows="3"></textarea>
+            </label><br><br>
+            <label>Período:
+                <input type="text" name="periodo" placeholder="Ej: Ene 2020 - Dic 2022">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Referencias</strong></legend>
+            <label>Nombre de referencia:
+                <input type="text" name="referente">
+            </label><br><br>
+            <label>Teléfono o email:
+                <input type="text" name="contacto_referente">
+            </label><br><br>
+            <label>Vínculo:
+                <input type="text" name="vinculo">
+            </label>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Enviar Curriculum">
+    </form>
+</body>
+</html>
